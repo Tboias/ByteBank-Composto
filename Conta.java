@@ -1,8 +1,8 @@
 public class Conta {
 
-    double saldo;
+    private double saldo;
     int agencia;
-    Long numero;
+    int numero;
     Cliente titular;
 
     public boolean depositar(double valor) {
@@ -30,4 +30,7 @@ public class Conta {
 
     }
 
+    public double getSaldo() {
+        return this.saldo;
+    }
 }
